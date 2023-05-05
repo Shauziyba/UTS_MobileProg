@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_auth/Data/dummy_data.dart';
-import 'package:flutter_auth/models/network.dart';
+import 'dart:math';
 
 class MyNetwrk extends StatelessWidget {
   const MyNetwrk({Key? key}) : super(key: key);
-
   // @override
   // Widget build(BuildContext context) {
   //   return Scaffold(
@@ -28,24 +26,22 @@ class MyNetwrk extends StatelessWidget {
   //
   @override
   Widget build(BuildContext context) {
-    List<myNetwork> networkInfo = network;
-
     return Container(
       color: Colors.grey,
       child: Column(
         children: <Widget>[
           Container(
             color: Colors.white,
-            child: ListTile(
-              title: Text("Manage my network"),
+            child: const ListTile(
+              title: Text("My network"),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Container(
             color: Colors.white,
-            child: ListTile(
+            child: const ListTile(
               title: Text("No pending invitations"),
               trailing: Text(
                 "MANAGE ALL",
@@ -53,23 +49,46 @@ class MyNetwrk extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 10,
+          const SizedBox(
+            height: 20,
           ),
           Expanded(
             child: Container(
-              color: Colors.white,
+              decoration: BoxDecoration(color: Colors.white),
+              // color: Colors.green,
               child: GridView.count(
-                crossAxisCount: 2,
-                children: List.generate(4, (index) {
-                  return Center(
-                    child: Text(
-                      'Item',
-                      style: Theme.of(context).textTheme.headlineSmall,
-                    ),
-                  );
-                }),
-              ),
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 4.0,
+                  mainAxisSpacing: 8.0,
+                  padding: const EdgeInsets.all(10),
+                  childAspectRatio: 1 / 1.6,
+                  children: network
+                      .map((network) => Column(children: [
+                            Image.network(
+                              "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+                              fit: BoxFit.fill,
+                              height: 120,
+                            ),
+                            Text(network['Name']!),
+                            Text(network['Status']!)
+                            //  addConnection: userProvider.addConection,
+                          ]))
+                      .toList()
+                  // children: List<Widget>.generate(
+                  //     network.length,
+                  //     (index) => Column(
+                  //           children: [
+                  //             Image.network(
+                  //               "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+                  //               fit: BoxFit.fill,
+                  //               height: 120,
+                  //             ),
+                  //             Text(network[index]['Name']!),
+                  //             Text(network[index]['Status']!)
+                  //           ],
+                  //         )),
+
+                  ),
             ),
           ),
         ],

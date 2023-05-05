@@ -22,7 +22,12 @@ const trySearch = [
   "Support specialist",
   "Computer programmer",
 ];
-const network = [myNetwork(status: "CEO", name: "robert")];
+const network = [
+  {"Name": "Ricky", "Status": "CEO"},
+  {"Name": "Ricky", "Status": "CEO"},
+  {"Name": "Ricky", "Status": "CEO"},
+  {"Name": "Ricky", "Status": "CEO"}
+];
 const chat = [
   Chat(
       nameChat: "Henry",
