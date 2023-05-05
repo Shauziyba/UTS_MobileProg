@@ -64,13 +64,13 @@ class MainPageState extends State<MainPage> {
   }
 
   Widget _buildBottomAppBar() {
-    Iterable<int> numOfNoti = context.watch<NotiCounter>().Num;
+    // Iterable<int> numOfNoti = context.watch<NotiCounter>().Num;
     int num = 0;
-    for (var element in numOfNoti) {
-      if (element == 1) {
-        num++;
-      }
-    }
+    // for (var element in numOfNoti) {
+    //   if (element == 1) {
+    //     num++;
+    //   }
+    // }
     return BottomNavigationBar(
       selectedFontSize: 10,
       unselectedFontSize: 8,

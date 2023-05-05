@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import '../../../Data/dummy_data.dart';
 
+// ignore: must_be_immutable
 class SearchProfile extends StatelessWidget {
   List<String> history = recentsearch;
   List<String> recent = trySearch;
