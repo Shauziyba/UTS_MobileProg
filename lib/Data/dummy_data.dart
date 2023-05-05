@@ -6,6 +6,7 @@ import '../models/group_model.dart';
 import '../models/notification.dart';
 import '../models/user_model.dart';
 import '../models/userpostModel.dart';
+import '../models/network.dart';
 
 const recentsearch = [
   "flutter delevolment",
@@ -21,6 +22,7 @@ const trySearch = [
   "Support specialist",
   "Computer programmer",
 ];
+const network = [myNetwork(status: "CEO", name: "robert")];
 const chat = [
   Chat(
       nameChat: "Henry",

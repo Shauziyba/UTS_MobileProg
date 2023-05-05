@@ -6,11 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:provider/provider.dart';
 
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../Provider/notification.dart';
 import '../sub-page/MyNetwork/mynetwork.dart';
 import '../sub-page/homepage/home_page.dart';
 import '../sub-page/post/post.dart';
@@ -22,17 +20,12 @@ import 'Screen/search.dart';
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
 
-
-  
-  
-
   @override
   State<MainPage> createState() => MainPageState();
 }
 
 class MainPageState extends State<MainPage> {
   int _index = 0;
-
 
   @override
   Widget build(BuildContext context) {
@@ -488,8 +481,6 @@ class MainPageState extends State<MainPage> {
                       textColor: Color.fromARGB(255, 52, 103, 232),
                     )),
               ),
-
-
             ],
           )),
     );

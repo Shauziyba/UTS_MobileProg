@@ -7,7 +7,7 @@ class Jobs {
   final String jobProfileUrl;
   const Jobs(
       {required this.jobProfileUrl,
-        required this.title,
+      required this.title,
       required this.name,
       required this.application,
       required this.date,
