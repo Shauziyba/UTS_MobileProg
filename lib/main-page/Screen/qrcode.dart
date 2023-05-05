@@ -1,4 +1,4 @@
-import 'package:project_uts/main-page/Screen/search.dart';
+import 'package:flutter_auth/main-page/Screen/search.dart';
 import 'package:flutter/material.dart';
 
 class QRCodePage extends StatefulWidget {

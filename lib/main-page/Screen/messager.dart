@@ -26,7 +26,7 @@ class _MessagePageState extends State<MessagePage> {
           icon: const Icon(Icons.arrow_back, color: Colors.grey),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) =>  MainPage()));
           },
         ),
         actions: [

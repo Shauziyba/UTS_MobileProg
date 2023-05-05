@@ -18,7 +18,7 @@ class PostPage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const MainPage(),
+                builder: (context) => MainPage(),
               ),
             );
           },

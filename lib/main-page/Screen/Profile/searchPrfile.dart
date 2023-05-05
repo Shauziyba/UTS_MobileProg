@@ -1,13 +1,12 @@
 // ignore: file_names
 // ignore: file_names
-import 'package:project_uts/main-page/Screen/Profile/profile.dart';
-import 'package:project_uts/main-page/Screen/qrcode.dart';
+import 'package:flutter_auth/main-page/Screen/Profile/profile.dart';
+import 'package:flutter_auth/main-page/Screen/qrcode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../Data/dummy_data.dart';
 
-// ignore: must_be_immutable
 class SearchProfile extends StatelessWidget {
   List<String> history = recentsearch;
   List<String> recent = trySearch;

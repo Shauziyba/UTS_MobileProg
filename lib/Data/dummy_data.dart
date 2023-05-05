@@ -1,4 +1,4 @@
-import 'package:project_uts/models/jobDetail.dart';
+import 'package:flutter_auth/models/jobDetail.dart';
 import '../models/chat.dart';
 import '../models/company_model.dart';
 import '../models/detailPost.dart';

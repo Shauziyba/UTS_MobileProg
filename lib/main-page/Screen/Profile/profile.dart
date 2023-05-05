@@ -1,4 +1,4 @@
-import 'package:project_uts/main-page/Screen/Profile/searchPrfile.dart';
+import 'package:flutter_auth/main-page/Screen/Profile/searchPrfile.dart';
 
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -55,7 +55,7 @@ class _ProfilePageState extends State<ProfilePage> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const MainPage()),
+              MaterialPageRoute(builder: (context) => MainPage()),
             );
           },
           icon: const Icon(

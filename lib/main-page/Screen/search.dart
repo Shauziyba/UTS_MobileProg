@@ -1,4 +1,4 @@
-import 'package:project_uts/main-page/Screen/qrcode.dart';
+import 'package:flutter_auth/main-page/Screen/qrcode.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +24,7 @@ class SearchPage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const MainPage()),
+              MaterialPageRoute(builder: (context) => MainPage()),
             );
           },
         ),

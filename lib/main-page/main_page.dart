@@ -1,9 +1,14 @@
-import 'package:project_uts/sub-page/jobs/job.dart';
-import 'package:project_uts/sub-page/notification/notification.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_auth/sub-page/jobs/job.dart';
+import 'package:flutter_auth/sub-page/notification/notification.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:provider/provider.dart';
+
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 import '../Provider/notification.dart';
 import '../sub-page/MyNetwork/mynetwork.dart';
@@ -15,7 +20,11 @@ import 'Screen/Profile/profile.dart';
 import 'Screen/search.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({Key? key}) : super(key: key);
+  MainPage({Key? key}) : super(key: key);
+
+
+  
+  
 
   @override
   State<MainPage> createState() => MainPageState();
@@ -23,6 +32,7 @@ class MainPage extends StatefulWidget {
 
 class MainPageState extends State<MainPage> {
   int _index = 0;
+
 
   @override
   Widget build(BuildContext context) {
@@ -64,13 +74,7 @@ class MainPageState extends State<MainPage> {
   }
 
   Widget _buildBottomAppBar() {
-    // Iterable<int> numOfNoti = context.watch<NotiCounter>().Num;
     int num = 0;
-    // for (var element in numOfNoti) {
-    //   if (element == 1) {
-    //     num++;
-    //   }
-    // }
     return BottomNavigationBar(
       selectedFontSize: 10,
       unselectedFontSize: 8,
@@ -484,6 +488,8 @@ class MainPageState extends State<MainPage> {
                       textColor: Color.fromARGB(255, 52, 103, 232),
                     )),
               ),
+
+
             ],
           )),
     );
