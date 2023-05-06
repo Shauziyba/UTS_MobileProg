@@ -5,6 +5,8 @@ import 'package:flutter_auth/component/sign_in.dart';
 import 'package:flutter_auth/component/square_tile.dart';
 import 'package:flutter_auth/component/textfield.dart';
 
+import 'forgot_pass_pages.dart';
+
 class LoginPage extends StatefulWidget {
 final Function()? onTap;
 const LoginPage({super.key, required this.onTap});
@@ -123,27 +125,28 @@ class _LoginPageState extends State<LoginPage> {
         
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:25),
-                child: Row
-                (
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: 
-                  [
-                    ElevatedButton(
-                      onPressed:(){
+                  children: [
+                    GestureDetector(
+                      onTap: (){
                         Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ForgotPass()),
+                          context,
+                          MaterialPageRoute(
+                            builder: (context){
+                            return ForgotPasswordPage();
+                        },
+                        ),
                         );
                       },
-                       child: Text(
+                      child:Text(
                         'Forgot Password?',
-                      style: TextStyle(color: Colors.black,),
+                      style: TextStyle(color: Colors.blue[900],
+                      fontWeight: FontWeight.bold),
                       ),
-                      ),
-                  ],
-                    
-              
-                ),
+                    )
+                  ],)
+
               ),
         
               const SizedBox(height:30),

@@ -152,19 +152,8 @@ class _SettingPageState extends State<SettingPage> {
                       ),
                     ),
                   ),
-                  InkWell(
-                    onTap: (){},
-                    child: Container(
-                      width: double.maxFinite,
-                      height: 30,
-                      
-                      alignment: Alignment.centerLeft,
-                      child: const Text(
-                        "Sign Out",
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                  ),
+
+  
                 ],
               ),
             ),
