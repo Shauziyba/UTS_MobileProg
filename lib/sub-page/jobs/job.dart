@@ -102,7 +102,7 @@ class _JobPageState extends State<JobPage> {
                         width: 10,
                       ),
                       Text(
-                        "Voat Phnum,Phnoom Penh,Cambodia",
+                        "Slipi, DKI Jakarta, Indonesia",
                         style: TextStyle(fontSize: 10),
                       ),
                     ],

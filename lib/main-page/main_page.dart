@@ -317,6 +317,11 @@ class MainPageState extends State<MainPage> {
                           ),
                           Row(
                             children: [
+                              const Text(
+                                "",
+                                style:
+                                    TextStyle(color: Colors.blue, fontSize: 8),
+                              ),
                               Container(
                                 margin:
                                     const EdgeInsets.only(right: 10, left: 10),

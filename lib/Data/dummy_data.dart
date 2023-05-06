@@ -170,7 +170,7 @@ final List<UserPostModel> postList = [
       share: "5k"),
   UserPostModel(
       name: "Flutter World",
-      profileUrl: "assets/postImage/flutterlogo.png",
+      profileUrl: "assets/postImage/flutterpost.jpeg",
       headline: "Flutter Open Projects | Flutter Drat world",
       tags:
           "#FlutterOpenProject, #FlutterMagicWorld, #Mobile&WebOpenApps, #Flutter+Dart❤️",
@@ -247,9 +247,9 @@ final List<CompanyModel> companyListData = [
 final notification = [
   const Notification(
     imgUrl:
-        "https://media.istockphoto.com/photos/confident-businessman-picture-id174764352?k=6&m=174764352&s=170667a&w=0&h=L7PetakqLNuyuMHW9fptHOa_q8-Wvdbjy1FkFrltn9s=",
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
     post:
-        "You are invited to apply. Please send your CV to pom.vanthan@ababank.com",
+        "Received, please come for interview!",
     reactions: 10,
     comments: 0,
     hours: 1,
@@ -260,65 +260,65 @@ final notification = [
         "https://w7.pngwing.com/pngs/741/278/png-transparent-tokopedia-android-online-shopping-android-shopping-mall-owl-bird-thumbnail.png",
     post:
         "In Tokopedia, we tie Code Review with our software development culture. We take it as a Agile process to increase our software quality. Welcome to join our company! Job vacancies that are available are listed below. Please kindly contact us for more info!",
-    reactions: 10,
+    reactions: 50,
+    comments: 13,
+    hours: 1,
+    seen: true,
+  ),
+  const Notification(
+    imgUrl:
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post: "Be the best and learn it for free",
+    reactions: 20,
+    comments: 10,
+    hours: 1,
+    seen: false,
+  ),
+  const Notification(
+    imgUrl:
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post:
+        "Here are 10 CHATGPT feature that you dont use!",
+    reactions: 1520,
+    comments: 842,
+    hours: 5,
+    seen: true,
+  ),
+  const Notification(
+    imgUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/800px-HackerRank_Icon-1000px.png",
+    post: "Try to beat us",
+    reactions: 2000,
+    comments: 1324,
+    hours: 8,
+    seen: false,
+  ),
+  const Notification(
+    imgUrl:
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post:
+        "HRINC Indonesia is looking for Recruitment Assistant 2 posts. Interested candidates, please submit your CV to email: mattew@gmail.com",
+    reactions: 20,
     comments: 5,
-    hours: 2,
-    seen: true,
-  ),
-  const Notification(
-    imgUrl:
-        "https://imgix.ranker.com/user_node_img/69/1360050/original/kelly-slater-photo-u22?fit=crop&fm=pjpg&q=60&w=375&dpr=1",
-    post: "What you prefer? Feel free to share your opinion. 👇",
-    reactions: 70,
-    comments: 10,
-    hours: 2,
-    seen: false,
-  ),
-  const Notification(
-    imgUrl:
-        "https://media.istockphoto.com/photos/portrait-of-serious-senior-woman-picture-id805011994?k=6&m=805011994&s=170667a&w=0&h=NCHWsaRxAGNzVvR6mBB7pcudOL9GNE3jB-uvae3UZ3U=",
-    post:
-        "Annah Posted: Having worked for both MNCs and local companies over the past decades",
-    reactions: 70,
-    comments: 10,
     hours: 3,
-    seen: true,
-  ),
-  const Notification(
-    imgUrl:
-        "https://media-exp1.licdn.com/dms/image/C560BAQHiNjPu7ApgyA/company-logo_200_200/0/1626837060356?e=2147483647&v=beta&t=C_ONr7woeXwaPxLvoygGk4nKqlIJn3qwnJh1XZWYEmE",
-    post: "A post by an employee at LickCoins: ...",
-    reactions: 70,
-    comments: 10,
-    hours: 4,
     seen: false,
   ),
   const Notification(
     imgUrl:
-        "https://i1.wp.com/sanespaces.com/core/wp-content/uploads/2017/03/Woman-business-thumbs-up.jpg?ssl=1",
-    post:
-        "HRINC Indonesia is looking for Recruitment Assistant 2 posts. Interested candidates, please submit your CV to email: heng.darya@hrinc.com.kh Tel: 0964481397(telegram)",
-    reactions: 70,
-    comments: 10,
-    hours: 4,
-    seen: false,
-  ),
-  const Notification(
-    imgUrl:
-        "https://www.eikonphoto.com/wp-content/uploads/2018/01/professional-headshots-for-women.jpg",
-    post: "Anya Posted: What is the best advice you ever received in working?",
-    reactions: 70,
-    comments: 10,
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post: "I have several job offer to be learned!",
+    reactions: 50,
+    comments: 43,
     hours: 5,
     seen: false,
   ),
   const Notification(
     imgUrl:
-        "https://i.pinimg.com/736x/cc/3e/23/cc3e23bc16ed08938cfef73b53dd53bb.jpg",
-    post: "Dear all, NEED YOUR HELP!!! ",
-    reactions: 70,
-    comments: 10,
-    hours: 7,
+        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post: "Free workshop for those who looking for jobs! ",
+    reactions: 121,
+    comments: 232,
+    hours: 3,
     seen: true,
   ),
 ];
