@@ -23,10 +23,19 @@ const trySearch = [
   "Computer programmer",
 ];
 const network = [
-  {"Name": "Ricky", "Status": "CEO"},
-  {"Name": "Ricky", "Status": "CEO"},
-  {"Name": "Ricky", "Status": "CEO"},
-  {"Name": "Ricky", "Status": "CEO"}
+  {
+    "Name": "Ricky",
+    "Status": "CEO of Tokopedia Company",
+    "urlNetwork":
+        "https://media.istockphoto.com/photos/confident-businessman-picture-id174764352?k=6&m=174764352&s=170667a&w=0&h=L7PetakqLNuyuMHW9fptHOa_q8-Wvdbjy1FkFrltn9s="
+  },
+  {"Name": "Nadiem", "Status": "Head Branch of puri indah Zinc Company"},
+  {"Name": "Rusman", "Status": "Employee of Daikin Company"},
+  {"Name": "Indra", "Status": "Employee of PT Bank DKI Company"},
+  {"Name": "Lidya", "Status": "Senior Developer of Lazada Company"},
+  {"Name": "Kim Suk Ji", "Status": "Junior Developer of PT IndoFood Company"},
+  {"Name": "Rico Julianto", "Status": "Head Branch of Detikcom Company"},
+  {"Name": "Noel", "Status": "Talent Aquisition of MyRepublic ID"}
 ];
 const chat = [
   Chat(

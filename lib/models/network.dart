@@ -1,5 +1,7 @@
 class myNetwork {
   final String name;
   final String status;
-  const myNetwork({required this.status, required this.name});
+  final String urlNetwork;
+  const myNetwork(
+      {required this.status, required this.name, required this.urlNetwork});
 }

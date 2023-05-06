@@ -24,6 +24,7 @@ class MyNetwrk extends StatelessWidget {
   //       ));
   //   // return const Text("MyNetwrk");
   //
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -57,38 +58,41 @@ class MyNetwrk extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white),
               // color: Colors.green,
               child: GridView.count(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 4.0,
-                  mainAxisSpacing: 8.0,
-                  padding: const EdgeInsets.all(10),
-                  childAspectRatio: 1 / 1.6,
-                  children: network
-                      .map((network) => Column(children: [
-                            Image.network(
-                              "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-                              fit: BoxFit.fill,
-                              height: 120,
-                            ),
-                            Text(network['Name']!),
-                            Text(network['Status']!)
-                            //  addConnection: userProvider.addConection,
-                          ]))
-                      .toList()
-                  // children: List<Widget>.generate(
-                  //     network.length,
-                  //     (index) => Column(
-                  //           children: [
-                  //             Image.network(
-                  //               "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-                  //               fit: BoxFit.fill,
-                  //               height: 120,
-                  //             ),
-                  //             Text(network[index]['Name']!),
-                  //             Text(network[index]['Status']!)
-                  //           ],
-                  //         )),
+                crossAxisCount: 2,
+                crossAxisSpacing: 4.0,
+                mainAxisSpacing: 8.0,
+                padding: const EdgeInsets.all(10),
+                // childAspectRatio: 1 / 2,
+                children: network
+                    .map((network) => Column(children: [
+                          Image.network(
+                            "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+                            fit: BoxFit.fill,
+                            height: 120,
+                          ),
+                          new Text(network['Name']!),
+                          new Text(
+                            network['Status']!,
+                            textAlign: TextAlign.center,
+                          )
+                          //  addConnection: userProvider.addConection,
+                        ]))
+                    .toList(),
 
-                  ),
+                // children: List<Widget>.generate(
+                //     network.length,
+                //     (index) => Column(
+                //           children: [
+                //             Image.network(
+                //               "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+                //               fit: BoxFit.fill,
+                //               height: 120,
+                //             ),
+                //             Text(network[index]['Name']!),
+                //             Text(network[index]['Status']!)
+                //           ],
+                //         )),
+              ),
             ),
           ),
         ],
