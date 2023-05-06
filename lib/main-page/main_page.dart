@@ -315,42 +315,7 @@ class MainPageState extends State<MainPage> {
                             style: TextStyle(
                                 fontSize: 10, fontWeight: FontWeight.bold),
                           ),
-                          Row(
-                            children: [
-                              const Text(
-                                "",
-                                style:
-                                    TextStyle(color: Colors.blue, fontSize: 8),
-                              ),
-                              Container(
-                                margin:
-                                    const EdgeInsets.only(right: 10, left: 10),
-                                width: 3,
-                                height: 3,
-                                child: const CircleAvatar(
-                                  backgroundColor: Colors.blue,
-                                  radius: 30,
-                                ),
-                              ),
-                              InkWell(
-                                splashColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const SettingPage()),
-                                  );
-                                },
-                                child: const Text(
-                                  "Settings",
-                                  style: TextStyle(
-                                      color: Colors.blue, fontSize: 8),
-                                ),
-                              )
-                            ],
-                          )
+
                         ],
                       ),
                       IconButton(
@@ -396,18 +361,14 @@ class MainPageState extends State<MainPage> {
                 ),
               ),
               InkWell(
-                onTap: () {},
-                child: Container(
-                    decoration: const BoxDecoration(
-                        border: Border(
-                            top: BorderSide(color: Colors.black12, width: 1))),
-                    child: const ListTile(
-                      title: Text("Recent"),
-                      textColor: Colors.black45,
-                    )),
-              ),
-              InkWell(
-                onTap: () {},
+                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const SettingPage()),
+                                  );
+                                },
                 child: Container(
                     decoration: const BoxDecoration(
                       border: Border(
@@ -416,49 +377,11 @@ class MainPageState extends State<MainPage> {
                       ),
                     ),
                     child: const ListTile(
-                      title: Text("Groups"),
+                      title: Text("Settings"),
                       textColor: Color.fromARGB(255, 33, 93, 243),
                     )),
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                        width: MediaQuery.of(context).size.width * 0.42,
-                        margin: const EdgeInsets.only(
-                            left: 20, top: 12, bottom: 12),
-                        child: const Text(
-                          "Event",
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 33, 93, 243),
-                              fontWeight: FontWeight.w500),
-                        )),
-                  ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      margin:
-                          const EdgeInsets.only(left: 40, top: 6, bottom: 6),
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.add,
-                            color: Colors.black38,
-                          ),
-                          Text(
-                            "Create Event",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 33, 93, 243),
-                                fontWeight: FontWeight.w500),
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
+
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -481,6 +404,44 @@ class MainPageState extends State<MainPage> {
                       textColor: Color.fromARGB(255, 52, 103, 232),
                     )),
               ),
+              
+              Container(
+  decoration: BoxDecoration(
+    border: Border(
+      top: BorderSide(
+        color: Colors.grey,
+        width: 1.0,
+      ),
+    ),
+  ),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.start,
+    children: [ 
+      IconButton(
+        padding: EdgeInsets.only(left: 20),
+        onPressed:  () async {
+          try {
+            await FirebaseAuth.instance.signOut();
+            print('User logged out');
+          } catch (e) {
+            print('Failed to log out: $e');
+          }
+        }, 
+        icon: Icon(Icons.logout),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(right: 15),
+        child: Text(
+          "Log Out",
+          style:TextStyle(
+            color: Color.fromARGB(255, 33, 93, 243),
+          )
+        ),
+      ),
+    ],
+  ),
+)
+
             ],
           )),
     );
