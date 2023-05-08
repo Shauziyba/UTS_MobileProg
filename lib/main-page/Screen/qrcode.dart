@@ -39,7 +39,7 @@ class _QRCodePageState extends State<QRCodePage> {
             ],
           ),
           title: const Text(
-            'LinkedIn QR code',
+            'WorkWave QR code',
             style: TextStyle(color: Colors.black),
           ),
         ),
@@ -68,12 +68,12 @@ class _QRCodePageState extends State<QRCodePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               const Text(
-                                "Seak Kimhour",
+                                "Nicholas Louis",
                                 style: TextStyle(
                                     fontSize: 12, fontWeight: FontWeight.bold),
                               ),
                               const Text(
-                                "Student at kirirom Institute of Technology",
+                                "Student at University Tarumanagara",
                                 style: TextStyle(fontSize: 10),
                               ),
                               Image.asset("assets/qrcode.png"),

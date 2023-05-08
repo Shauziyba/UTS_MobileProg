@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import '../main_page.dart';
 
 class SettingPage extends StatefulWidget {
@@ -14,7 +13,6 @@ class SettingPage extends StatefulWidget {
 }
 
 class _SettingPageState extends State<SettingPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -152,8 +150,6 @@ class _SettingPageState extends State<SettingPage> {
                       ),
                     ),
                   ),
-
-  
                 ],
               ),
             ),
