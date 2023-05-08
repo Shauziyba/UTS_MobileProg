@@ -4,10 +4,6 @@ import 'package:flutter_auth/sub-page/notification/notification.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/font_awesome5_icons.dart';
-import 'package:provider/provider.dart';
-
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 
 import '../sub-page/MyNetwork/mynetwork.dart';
 import '../sub-page/homepage/home_page.dart';
@@ -315,7 +311,6 @@ class MainPageState extends State<MainPage> {
                             style: TextStyle(
                                 fontSize: 10, fontWeight: FontWeight.bold),
                           ),
-
                         ],
                       ),
                       IconButton(
@@ -362,13 +357,12 @@ class MainPageState extends State<MainPage> {
               ),
               InkWell(
                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const SettingPage()),
-                                  );
-                                },
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SettingPage()),
+                  );
+                },
                 child: Container(
                     decoration: const BoxDecoration(
                       border: Border(
@@ -381,7 +375,6 @@ class MainPageState extends State<MainPage> {
                       textColor: Color.fromARGB(255, 33, 93, 243),
                     )),
               ),
-
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -404,44 +397,40 @@ class MainPageState extends State<MainPage> {
                       textColor: Color.fromARGB(255, 52, 103, 232),
                     )),
               ),
-              
               Container(
-  decoration: BoxDecoration(
-    border: Border(
-      top: BorderSide(
-        color: Colors.grey,
-        width: 1.0,
-      ),
-    ),
-  ),
-  child: Row(
-    mainAxisAlignment: MainAxisAlignment.start,
-    children: [ 
-      IconButton(
-        padding: EdgeInsets.only(left: 20),
-        onPressed:  () async {
-          try {
-            await FirebaseAuth.instance.signOut();
-            print('User logged out');
-          } catch (e) {
-            print('Failed to log out: $e');
-          }
-        }, 
-        icon: Icon(Icons.logout),
-      ),
-      Padding(
-        padding: const EdgeInsets.only(right: 15),
-        child: Text(
-          "Log Out",
-          style:TextStyle(
-            color: Color.fromARGB(255, 33, 93, 243),
-          )
-        ),
-      ),
-    ],
-  ),
-)
-
+                decoration: BoxDecoration(
+                  border: Border(
+                    top: BorderSide(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    IconButton(
+                      padding: EdgeInsets.only(left: 20),
+                      onPressed: () async {
+                        try {
+                          await FirebaseAuth.instance.signOut();
+                          print('User logged out');
+                        } catch (e) {
+                          print('Failed to log out: $e');
+                        }
+                      },
+                      icon: Icon(Icons.logout),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15),
+                      child: Text("Log Out",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 33, 93, 243),
+                          )),
+                    ),
+                  ],
+                ),
+              )
             ],
           )),
     );
