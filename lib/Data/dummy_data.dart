@@ -6,7 +6,6 @@ import '../models/group_model.dart';
 import '../models/notification.dart';
 import '../models/user_model.dart';
 import '../models/userpostModel.dart';
-import '../models/network.dart';
 
 const recentsearch = [
   "flutter delevolment",
@@ -246,10 +245,8 @@ final List<CompanyModel> companyListData = [
 
 final notification = [
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
-    post:
-        "Received, please come for interview!",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post: "Received, please come for interview!",
     reactions: 10,
     comments: 0,
     hours: 1,
@@ -266,8 +263,7 @@ final notification = [
     seen: true,
   ),
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
     post: "Be the best and learn it for free",
     reactions: 20,
     comments: 10,
@@ -275,10 +271,8 @@ final notification = [
     seen: false,
   ),
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
-    post:
-        "Here are 10 CHATGPT feature that you dont use!",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    post: "Here are 10 CHATGPT feature that you dont use!",
     reactions: 1520,
     comments: 842,
     hours: 5,
@@ -294,8 +288,7 @@ final notification = [
     seen: false,
   ),
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
     post:
         "HRINC Indonesia is looking for Recruitment Assistant 2 posts. Interested candidates, please submit your CV to email: mattew@gmail.com",
     reactions: 20,
@@ -304,8 +297,7 @@ final notification = [
     seen: false,
   ),
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
     post: "I have several job offer to be learned!",
     reactions: 50,
     comments: 43,
@@ -313,8 +305,7 @@ final notification = [
     seen: false,
   ),
   const Notification(
-    imgUrl:
-        "https://img.freepik.com/free-icon/user_318-159711.jpg",
+    imgUrl: "https://img.freepik.com/free-icon/user_318-159711.jpg",
     post: "Free workshop for those who looking for jobs! ",
     reactions: 121,
     comments: 232,

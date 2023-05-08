@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Data/dummy_data.dart';
-import 'dart:math';
 
 class MyNetwrk extends StatelessWidget {
   const MyNetwrk({Key? key}) : super(key: key);
